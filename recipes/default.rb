@@ -14,7 +14,7 @@ user "hadoop" do
   action   :create
 end
 
-remote_file "/tmp/hadoop.tar.gz" do
+remote_file "#{Chef::Config[:file_cache_path]}/hadoop.tar.gz" do
   owner  "hadoop"
   group  "hadoop"
   source "http://apache.mirrors.hoobly.com/hadoop/common/hadoop-1.2.0/hadoop-1.2.0.tar.gz"
@@ -33,7 +33,7 @@ bash "install-hadoop" do
   group "hadoop"
 
   code <<-EOC
-    tar -xvzf /tmp/hadoop.tar.gz 
+    tar -xvzf #{Chef::Config[:file_cache_path]}/hadoop.tar.gz 
   EOC
 end
 
