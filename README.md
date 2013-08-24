@@ -1,0 +1,4 @@
+chef-hadoop
+===========
+
+hadoop cookbook
