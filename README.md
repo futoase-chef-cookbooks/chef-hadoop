@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/futoase-chef-cookbooks/chef-hadoop.png?branch=master)](https://travis-ci.org/futoase-chef-cookbooks/chef-hadoop)
+
 hadoop Cookbook
 ===============
 
